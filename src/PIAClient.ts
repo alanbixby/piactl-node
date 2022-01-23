@@ -66,7 +66,3 @@ class PIAClient {
     return execSync('piactl get region').toString().trim() as PIARegion
   }
 }
-
-const test = new PIAClient()
-await test.reconnect()
-await test.disconnect
